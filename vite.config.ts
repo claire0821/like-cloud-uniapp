@@ -29,7 +29,7 @@ export default defineConfig({
 	    //配置跨域
 	    proxy: {
 	        '/api': {
-	            target: 'http://127.0.0.1:8093/api',
+	            target: 'http://10.21.0.61:8093/api',
 	            changeOrigin: true,
 	            rewrite: path => path.replace(/^\/api/, '')
 	        }

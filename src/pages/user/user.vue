@@ -151,11 +151,12 @@ import {menuJump, copy} from '@/utils/tools'
 import {toLogin,wxMnpLogin} from '@/utils/login'
 import { reactive,computed,ref } from 'vue'
 const userStore = useUserStore()
+const { VITE_APP_STATIC_URL } = import.meta.env;
 
-let url1 = 'http://10.15.0.61:8082/api/uploads/image/20221108/bb111f11-454a-4fb6-be4b-e6d5f003951b.png'
+let url = 'api/uploads/image/20230328/32a983d9-39b3-432f-ae74-41f8d38a4aa5.jpg'
 // const navBackground = computed(() => {return 'background-image: url(http://10.15.0.61:8082/api/uploads/image/20221108/bb111f11-454a-4fb6-be4b-e6d5f003951b.png)'})
 //背景图
-const background = computed(() => {return 'background-image: url(' + url1 + ')'})
+const background = computed(() => {return 'background-image: url(' + VITE_APP_STATIC_URL + url + ')'})
 const navBg = ref<number>(0)
 const userInfo = reactive<Member>({
     id: 0,

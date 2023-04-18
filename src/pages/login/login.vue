@@ -256,7 +256,8 @@ const loginFun = async (scene: LoginTypeEnum, code?: string) => {
     }
     const params = {
         ...formData,
-        scene
+        scene,
+		admin: false
     }
     if (code) params.code = code
     uni.showLoading({

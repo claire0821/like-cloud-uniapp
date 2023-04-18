@@ -179,7 +179,7 @@
 			"style": {
 				"navigationBarTitleText": "会员中心"
 			}
-		},
+		}
     ],
 	"subPackages": [{
 		"root": "pages/bundle",

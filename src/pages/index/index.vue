@@ -134,7 +134,7 @@ import {loadingFun,menuJump,arraySlice,setTabbar,getRect} from '@/utils/tools'
 import { useUserStore } from '@/stores/user'
 const userStore = useUserStore()
 const isLogin = computed(() => {return userStore.isLogin})
-const { VITE_APP_STATIC_URL } = import.meta.env;
+const { VITE_APP_STATIC_URL } = import.meta.env
 
 let url1 = VITE_APP_STATIC_URL + 'api/uploads/image/20230315/6cf60a0d-adfd-4d83-8b46-c5c7792e390d.png'
 // const navBackground = computed(() => {return 'background-image: url(http://10.15.0.61:8082/api/uploads/image/20221108/bb111f11-454a-4fb6-be4b-e6d5f003951b.png)'})
